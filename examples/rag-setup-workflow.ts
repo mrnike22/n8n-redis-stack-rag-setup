@@ -26,7 +26,7 @@ const embeddingGemini = embeddings({
   config: {
     name: 'Embeddings Gemini',
     parameters: {},
-    credentials: { googlePalmApi: { id: 'DmIh0rmRDAWCRxQU', name: 'Nelsons' } },
+    credentials: { googlePalmApi: { id: '__PENDENTE__', name: 'sua-credencial-gemini' } },
     position: [600, 250]
   }
 });
@@ -67,7 +67,7 @@ const inserirVectorStore = vectorStore({
         overwriteDocuments: true
       }
     },
-    credentials: { redis: { id: 'xRVA77rOmsksQZLE', name: 'PROJETO-ACTO-REDIS-STACK' } },
+    credentials: { redis: { id: '__PENDENTE__', name: 'sua-credencial-redis-stack' } },
     subnodes: { embedding: embeddingGemini, documentLoader: dataLoader },
     position: [600, 0]
   },
