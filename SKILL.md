@@ -62,7 +62,7 @@ made to load Redis Stack modules. This is a template limitation, not a syntax er
    missing password (`ERR ... without any password configured`) can otherwise hide behind the
    suppressed stderr.
 8. The internal hostname other services (n8n) reach this on is
-   `<project>_<service-name>` (e.g. `n8n-neoson_redis-stack-rag`) on port 6379 — same
+   `<project>_<service-name>` (e.g. `meu-projeto_redis-stack-rag`) on port 6379 — same
    convention as the old Redis-type service, no "Dominios"/port publish needed for
    internal-only access. Delete the auto-created HTTP domain entry (port 80) since Redis is
    TCP, not HTTP.
